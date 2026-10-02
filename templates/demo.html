@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron &amp; Sage — Modern Mediterranean Restaurant in Chicago</title>
+  <meta name="description" content="Saffron & Sage is a modern Mediterranean kitchen in Chicago. Slow food for fast lives — explore the menu, plan your visit, or ask our 24/7 chat assistant anything." />
+  <link rel="canonical" href="https://saffronandsage.example/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saffron & Sage — Modern Mediterranean Kitchen, Chicago" />
+  <meta property="og:description" content="Slow food for fast lives. Modern Mediterranean cooking on Halsted Street — plus a chat assistant that answers questions 24/7." />
+  <meta property="og:image" content="/static/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Saffron & Sage",
+    "servesCuisine": ["Mediterranean", "Modern"],
+    "priceRange": "$$",
+    "telephone": "+1-312-555-0194",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2148 N Halsted St",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60614"
+    },
+    "openingHours": ["Tu-Th 11:30-22:00", "Fr-Sa 11:30-23:00", "Su 12:00-21:00"],
+    "acceptsReservations": "True"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/demo.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Saffron and Sage — home">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4 0-7-2.6-7-6.2 0-2.4 1.3-4.3 3-5.4C9.5 8.3 11 7.5 12 3c1 4.5 2.5 5.3 4 6.4 1.7 1.1 3 3 3 5.4 0 3.6-3 6.2-7 6.2z" fill="currentColor"/><path d="M12 21c-1.9 0-3.6-.7-4.7-1.9.6.1 1.3.2 2 .1 3-.2 5-2.3 5-5 0-1.6-.7-3-1.9-4 .5 2.9.4 6.9-1.4 9.6.6.7 1.3 1 2 1.2z" fill="#f6f1e3" opacity=".55"/></svg>
+        <span class="brand-text">Saffron <em>&amp;</em> Sage</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#embed">The Widget</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="tel:+13125550194">Reserve a Table</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-screen mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="#embed">The Widget</a>
+      <a href="tel:+13125550194" class="btn btn-primary btn-lg">Reserve a Table</a>
+    </nav>
+    <p class="mobile-menu-foot">2148 N Halsted St, Chicago, IL<br />(312) 555-0194</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Welcome to Saffron and Sage">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker hero-kicker"><span class="kicker-rule"></span>Modern Mediterranean Kitchen — Chicago</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="line-inner">Slow food</span></span>
+            <span class="line"><span class="line-inner">for <em>fast</em> lives.</span></span>
+          </h1>
+          <p class="lede hero-lede">
+            Charred octopus, saffron tagines, and mezze worth lingering over — on Halsted Street.
+            And when the kitchen's closed, our assistant isn't: ask it anything, any time.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="tel:+13125550194">Reserve a Table <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <button class="text-link chat-opener" id="chatOpener" type="button">Chat with our assistant <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-stats">
+            <div><strong data-count="4.9" data-decimals="1">0</strong><span>Guest rating</span></div>
+            <div><strong data-count="15" data-suffix="k+">0</strong><span>Guests a year</span></div>
+            <div><strong>24/7</strong><span>Answers, via chat</span></div>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <div class="img-frame">
+            <img src="/static/assets/hero.jpg"
+                 alt="Overhead spread of Mediterranean dishes: grilled meats, herbs, and mezze on a wooden table"
+                 fetchpriority="high" width="1600" height="1067" />
+          </div>
+          <figcaption>From tonight's pass — grilled, charred, and bright.</figcaption>
+        </figure>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Saffron</span><i>✦</i><span>Sage</span><i>✦</i><span>Chicago</span><i>✦</i><span>Est. 2016</span><i>✦</i><span>Open late</span><i>✦</i>
+          <span>Saffron</span><i>✦</i><span>Sage</span><i>✦</i><span>Chicago</span><i>✦</i><span>Est. 2016</span><i>✦</i><span>Open late</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <figure class="story-media reveal">
+          <div class="img-frame">
+            <img src="/static/assets/story.jpg"
+                 alt="Saffron, dried chilies, cumin, and other spices arranged on a white wooden table"
+                 loading="lazy" width="1200" height="800" />
+          </div>
+          <figcaption>The pantry — every dish starts here.</figcaption>
+        </figure>
+        <div class="story-copy">
+          <p class="kicker reveal"><span class="kicker-rule"></span>Our story</p>
+          <h2 id="story-title" class="section-title reveal">Two spices, <em>one kitchen.</em></h2>
+          <p class="reveal"><span class="dropcap">S</span>affron — the world's most patient spice — and sage, the herb that perfumes the whole Mediterranean. We named the restaurant after the two flavors that taught us to slow down.</p>
+          <p class="reveal">Since 2016 we've cooked modern Mediterranean food the unhurried way: tagines that simmer for hours, octopus kissed by real charcoal, baklava soaked in orange-blossom honey. No shortcuts — except one.</p>
+          <p class="reveal">Our website assistant answers your questions instantly, day or night. Hours, menus, reservations, dietary needs — tap the bubble and ask. That's the fast part. The food still takes its time.</p>
+          <button class="text-link chat-opener reveal" type="button">Try it now — ask about tonight's menu <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section section-deep" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <p class="kicker kicker-center reveal"><span class="kicker-rule"></span>The menu<span class="kicker-rule"></span></p>
+        <h2 id="menu-title" class="section-title center reveal">Tonight at <em>Saffron &amp; Sage</em></h2>
+        <p class="section-sub center reveal">Five signatures that never leave the menu — the rest changes with the market.</p>
+
+        <div class="menu-layout">
+          <div class="menu-list reveal">
+            <article class="dish">
+              <div class="dish-top"><h3>Charred Octopus</h3><span class="dots" aria-hidden="true"></span><span class="price">$24</span></div>
+              <p>Grilled octopus, smoked paprika, lemon aioli</p>
+            </article>
+            <article class="dish">
+              <div class="dish-top"><h3>Saffron Chicken Tagine</h3><span class="dots" aria-hidden="true"></span><span class="price">$28</span></div>
+              <p>Slow-cooked chicken, apricots, almonds, couscous</p>
+            </article>
+            <article class="dish">
+              <div class="dish-top"><h3>Wild Mushroom Mezze Board</h3><span class="dots" aria-hidden="true"></span><span class="price">$18</span></div>
+              <p>Hummus, whipped feta, olives, warm pita</p>
+            </article>
+            <article class="dish">
+              <div class="dish-top"><h3>Harissa Salmon</h3><span class="dots" aria-hidden="true"></span><span class="price">$32</span></div>
+              <p>Crispy-skin salmon, harissa glaze, herb salad</p>
+            </article>
+            <article class="dish">
+              <div class="dish-top"><h3>Pistachio Baklava</h3><span class="dots" aria-hidden="true"></span><span class="price">$12</span></div>
+              <p>Honey, orange blossom, vanilla gelato</p>
+            </article>
+            <p class="menu-note">Half the menu is vegetarian, with vegan and gluten-free options always available. Ask the assistant about today's specials.</p>
+          </div>
+          <figure class="menu-media reveal" data-reveal-delay="1">
+            <div class="img-frame">
+              <img src="/static/assets/dish.jpg"
+                   alt="Mediterranean salad with feta, olives, orange, and walnuts beside a glass of fresh orange juice"
+                   loading="lazy" width="1200" height="1800" />
+            </div>
+            <figcaption>Bright, briny, a little sweet — the house style.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-copy">
+          <p class="kicker reveal"><span class="kicker-rule"></span>Hours &amp; location</p>
+          <h2 id="visit-title" class="section-title reveal">Come <em>hungry.</em></h2>
+          <address class="address reveal">
+            <strong>Saffron &amp; Sage</strong><br />
+            2148 N Halsted St<br />
+            Chicago, IL 60614<br />
+            <a href="tel:+13125550194">(312) 555-0194</a>
+          </address>
+          <ul class="hours reveal" data-reveal-delay="1">
+            <li><span>Tue – Thu</span><span>11:30 AM – 10:00 PM</span></li>
+            <li><span>Fri – Sat</span><span>11:30 AM – 11:00 PM</span></li>
+            <li><span>Sunday</span><span>12:00 PM – 9:00 PM</span></li>
+            <li><span>Monday</span><span>Closed</span></li>
+          </ul>
+          <p class="transit reveal" data-reveal-delay="2">Street parking on Halsted · Public garage one block south · Takeout ready in 20–25 min</p>
+          <div class="reveal" data-reveal-delay="2">
+            <a class="btn btn-primary" href="tel:+13125550194">Reserve a Table <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <figure class="visit-media reveal" data-reveal-delay="1">
+          <div class="img-frame">
+            <img src="/static/assets/dining.jpg"
+                 alt="The warm dining room at Saffron and Sage, set for evening service"
+                 loading="lazy" width="1600" height="1067" />
+          </div>
+          <figcaption class="visit-card">
+            <strong>Find the glow</strong>
+            <span>2148 N Halsted St, Chicago</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ EMBED / PRODUCT ============ -->
+    <section class="section section-alt" id="embed" aria-labelledby="embed-title">
+      <div class="container embed-wrap">
+        <p class="kicker kicker-center reveal"><span class="kicker-rule"></span>The widget<span class="kicker-rule"></span></p>
+        <h2 id="embed-title" class="section-title center reveal">Your site's <em>new host.</em></h2>
+        <p class="section-sub center reveal">
+          The chat bubble on this page answers guests 24/7 — hours, menu, reservations,
+          dietary needs, parking, takeout. Drop it on <strong>any</strong> website in 3 lines.
+          No frameworks, no build step, ~11&nbsp;KB of vanilla JS + CSS.
+        </p>
+
+        <div class="code-card reveal">
+          <div class="code-head">
+            <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="code-title">embed.html</span>
+            <button class="copy-btn" id="copyBtn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copyLabel">Copy</span>
+            </button>
+          </div>
+<pre class="code-body" id="embedSnippet"><code>&lt;link rel="stylesheet" href="https://your-server/widget/chat-widget.css"&gt;
+&lt;script src="https://your-server/widget/chat-widget.js"&gt;&lt;/script&gt;
+&lt;script&gt;ChatWidget.init({ apiUrl: "https://your-server/api/chat" });&lt;/script&gt;</code></pre>
+        </div>
+        <div class="embed-cols">
+          <div class="reveal">
+            <h3>What it handles out of the box</h3>
+            <ul class="intent-chips" aria-label="Question topics the assistant answers">
+              <li>Hours</li><li>Menu</li><li>Reservations</li><li>Dietary needs</li>
+              <li>Location &amp; parking</li><li>Takeout</li><li>Prices</li><li>Contact</li>
+            </ul>
+          </div>
+          <div class="reveal" data-reveal-delay="1">
+            <h3>Made for real service</h3>
+            <ul class="embed-list">
+              <li><strong>Remembers guests</strong> — "my name is Alex" is greeted by name for the rest of the chat.</li>
+              <li><strong>Never dead-ends</strong> — unknown questions get a graceful fallback with your phone number.</li>
+              <li><strong>LLM-ready contract</strong> — <code>POST /api/chat</code> speaks plain JSON in/out, so a real LLM API can replace the rule engine later with zero widget changes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-statement reveal">The table's set.<br /><em>See you tonight.</em></p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Back to top">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4 0-7-2.6-7-6.2 0-2.4 1.3-4.3 3-5.4C9.5 8.3 11 7.5 12 3c1 4.5 2.5 5.3 4 6.4 1.7 1.1 3 3 3 5.4 0 3.6-3 6.2-7 6.2z" fill="currentColor"/><path d="M12 21c-1.9 0-3.6-.7-4.7-1.9.6.1 1.3.2 2 .1 3-.2 5-2.3 5-5 0-1.6-.7-3-1.9-4 .5 2.9.4 6.9-1.4 9.6.6.7 1.3 1 2 1.2z" fill="#f6f1e3" opacity=".55"/></svg>
+            <span class="brand-text">Saffron <em>&amp;</em> Sage</span>
+          </a>
+          <p class="footer-tag">Modern Mediterranean kitchen<br />in Chicago, Illinois.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#story">Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#visit">Visit</a>
+          <a href="#embed">The Widget</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="tel:+13125550194">(312) 555-0194</a>
+          <span>2148 N Halsted St, Chicago, IL 60614</span>
+          <span>Tue–Sun · Closed Mondays</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Saffron &amp; Sage. Demo site for portfolio purposes.</p>
+        <button class="text-link chat-opener" type="button">Ask the assistant <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== The chat widget, embedded in 3 lines ===== -->
+  <link rel="stylesheet" href="/widget/chat-widget.css" />
+  <script src="/widget/chat-widget.js"></script>
+  <script>
+    window.saffronChat = ChatWidget.init({
+      apiUrl: "/api/chat",
+      businessName: "Saffron & Sage",
+      accentColor: "#22301e",
+      greeting: "Hello! I'm the Saffron & Sage assistant. Ask me about our hours, menu, reservations, or dietary options.",
+      quickReplies: ["What are your hours?", "Show me the menu", "Book a table"]
+    });
+  </script>
+  <script src="/static/demo.js"></script>
+</body>
+</html>
