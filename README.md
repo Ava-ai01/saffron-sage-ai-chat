@@ -1,6 +1,6 @@
 > **Live demo:** [https://saffron-sage-chat.vercel.app](https://saffron-sage-chat.vercel.app)
 
-![Demo screenshot](screenshots/desktop-hero.png)
+![Project cover — as shown on Upwork](screenshots/upwork-cover.png)
 
 ---
 
