@@ -2,6 +2,11 @@
 
 ![Project cover — as shown on Upwork](screenshots/upwork-cover.png)
 
+## Demo video
+
+<video src="demo.mp4" controls width="100%"></video>
+
+
 ---
 
 # AI Chat Widget — 24/7 Website Assistant
